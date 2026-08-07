@@ -10,20 +10,14 @@ Algoritmo "Menu"
 Var
 // Seção de Declarações das variáveis 
 opcao : inteiro
-opcaoValida : logico
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 repita
       escreval("Exiba o menu: 1 – Novo cadastro, 2 – Consultar, 3 – Sair")
       leia(opcao)
-      escolha opcao
-              caso 1, 2, 3
-                   opcaoValida <- verdadeiro
-              outrocaso
-      fimescolha
       
-ate (opcaoValida = Verdadeiro)
+ate ((opcao = 1) ou (opcao = 2) ou (opcao = 3))
 
 Escreval("A ecolha foi ", opcao)
 
